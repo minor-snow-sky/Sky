@@ -1,0 +1,3 @@
+[submodule "Sky/ThirdLibrary/spdlog"]
+	path = Sky/ThirdLibrary/spdlog
+	url = https://github.com/gabime/spdlog
