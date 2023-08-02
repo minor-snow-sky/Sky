@@ -15,9 +15,11 @@
     <ClInclude Include="src\Sky\Application.h" />
     <ClInclude Include="src\Sky\Core.h" />
     <ClInclude Include="src\Sky\EntryPoint.h" />
+    <ClInclude Include="src\Sky\Log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Sky\Application.cpp" />
+    <ClCompile Include="src\Sky\Log.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -66,7 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SKY_PLATFORM_WINDOWS;SKY_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Sky\ThirdLibrary\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -81,7 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SKY_PLATFORM_WINDOWS;SKY_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Sky\ThirdLibrary\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
